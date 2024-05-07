@@ -1,0 +1,65 @@
+.sales-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    background: #F9F9F9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.sales-header {
+    color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.sales-content {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+       padding: 1rem;
+}
+
+.sales-info {
+    color: #333;
+    font-size: 14px;
+}
+
+.sales-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.metric-value {
+    font-size: 2rem;
+    color: #4c914f;
+    font-weight: bold;
+}
+
+.metric-label {
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+}
+
+// RESPONSIVENESS ==================
+@media (max-width: 940px) {
+    .sales-metrics {
+        grid-template-columns: 1fr;
+           gap: 0.5rem; 
+    }
+}
